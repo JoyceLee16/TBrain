@@ -53,7 +53,7 @@ def list_time_calculate(filename='D:\\TBrain_time.csv', date1=20170406, date2=20
             #  print(t2)
             s2 = new.loc[new.date == t2, 'time'].sum()
             #  print(k, t2.strftime('%Y-%m-%d'), s2)
-            cc= (k, t2.strftime('%Y-%m-%d'), s2/600.0)
+            cc= (k, t2.strftime('%Y-%m-%d'), s2/3600.0)
             table = list(cc) + table # a list
     #  print(table)
     temp = zip(*(iter(table),) * 3) #  three items as a group
